@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Slayer Severed",
+    "cargo": "Desarrollador",
+    "bio": "Apasionado del desarrollo de videojuegos con enfoque en innovación y jugabilidad.",
+    "foto": "/img/equipo/severed_perfil.png",
+    "steam": "https://steamcommunity.com/id/SlayerSevered/"
+  },
+  {
+    "nombre": "Nickolsis",
+    "cargo": "Diseñador",
+    "bio": "Diseñador creativo enfocado en arte visual y experiencia de usuario.",
+    "foto": "/img/equipo/nickols_perfil.jpg",
+    "steam": "https://steamcommunity.com/id/Nickolsis"
+  }
+]
