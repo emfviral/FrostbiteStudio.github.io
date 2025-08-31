@@ -1,5 +1,7 @@
+// src/components/Hero.jsx
 import { Typography, Box } from "@mui/material"
 import { useState, useEffect } from "react"
+import banner from "../img/banners/banner_principal.jpg" // Importar imagen
 
 export default function Hero() {
   const fullTitle = "Frostbite Studio"
@@ -14,12 +16,10 @@ export default function Hero() {
 
     const titleInterval = setInterval(() => {
       if (titleIndex < fullTitle.length) {
-        setTitleText(fullTitle.slice(0, titleIndex + 1)) // slice seguro
+        setTitleText(fullTitle.slice(0, titleIndex + 1))
         titleIndex++
       } else {
         clearInterval(titleInterval)
-
-        // iniciar animación del subtítulo
         const subtitleInterval = setInterval(() => {
           if (subtitleIndex < fullSubtitle.length) {
             setSubtitleText(fullSubtitle.slice(0, subtitleIndex + 1))
@@ -36,24 +36,24 @@ export default function Hero() {
 
   return (
     <Box
-  component="header"
-  sx={{
-    position: "relative",
-    height: "100vh",
-    minHeight: "600px", // asegura visibilidad en pantallas grandes
-    color: "white",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    px: 2,
-    mt: 0, // elimina margen superior
-    backgroundImage: "url('/img/banners/banner_principal.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
+      component="header"
+      sx={{
+        position: "relative",
+        height: "100vh",
+        minHeight: "600px",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        px: 2,
+        mt: 0,
+        backgroundImage: `url(${banner})`, // Usamos la importación
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       {/* Overlay oscuro */}
       <Box
