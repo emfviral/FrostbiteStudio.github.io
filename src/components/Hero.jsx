@@ -36,23 +36,24 @@ export default function Hero() {
 
   return (
     <Box
-      component="header"
-      sx={{
-        position: "relative",
-        height: "100vh",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        px: 2,
-        mt: 8,
-        backgroundImage: "url('/img/banners/banner_principal.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+  component="header"
+  sx={{
+    position: "relative",
+    height: "100vh",
+    minHeight: "600px", // asegura visibilidad en pantallas grandes
+    color: "white",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    px: 2,
+    mt: 0, // elimina margen superior
+    backgroundImage: "url('/img/banners/banner_principal.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
     >
       {/* Overlay oscuro */}
       <Box
