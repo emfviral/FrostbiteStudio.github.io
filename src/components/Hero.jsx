@@ -1,14 +1,13 @@
 // src/components/Hero.jsx
 import { Typography, Box } from "@mui/material"
 import { useState, useEffect } from "react"
-import banner from "../img/banners/banner_principal.jpg" // Importar imagen
 
 export default function Hero() {
   const fullTitle = "Frostbite Studio"
   const fullSubtitle = "Desarrollo de videojuegos con pasión y creatividad"
 
-  const [titleText, setTitleText] = useState("")      // título empieza vacío
-  const [subtitleText, setSubtitleText] = useState("") // subtítulo empieza vacío
+  const [titleText, setTitleText] = useState("")
+  const [subtitleText, setSubtitleText] = useState("")
 
   useEffect(() => {
     let titleIndex = 0
@@ -49,7 +48,7 @@ export default function Hero() {
         textAlign: "center",
         px: 2,
         mt: 0,
-        backgroundImage: `url(${banner})`, // Usamos la importación
+        backgroundImage: `url(/img/banners/banner_principal.jpg)`, // ✅ desde public
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
