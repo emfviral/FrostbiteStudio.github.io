@@ -1,5 +1,6 @@
 // src/components/Hero.jsx
 import { Typography, Box } from "@mui/material"
+import bannerPrincipal from '../../public/img/banners/banner_principal.jpg';
 import { useState, useEffect } from "react"
 
 export default function Hero() {
@@ -48,7 +49,7 @@ export default function Hero() {
         textAlign: "center",
         px: 2,
         mt: 0,
-        backgroundImage: `url(/img/banners/banner_principal.jpg)`, // ✅ desde public
+  backgroundImage: `url(${bannerPrincipal})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
