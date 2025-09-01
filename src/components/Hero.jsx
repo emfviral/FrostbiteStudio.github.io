@@ -1,6 +1,6 @@
 // src/components/Hero.jsx
 import { Typography, Box } from "@mui/material"
-import bannerPrincipal from '../assets/img/banner_principal.jpg';
+// Usar la imagen desde public/img/banner_principal.jpg con ruta absoluta
 import { useState, useEffect } from "react"
 
 export default function Hero() {
@@ -49,7 +49,7 @@ export default function Hero() {
         textAlign: "center",
         px: 2,
         mt: 0,
-  backgroundImage: `url(${bannerPrincipal})`,
+  backgroundImage: "url('/img/banner_principal.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
