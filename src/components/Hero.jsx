@@ -1,6 +1,5 @@
 // src/components/Hero.jsx
 import { Typography, Box } from "@mui/material"
-// Usar la imagen desde public/img/banner_principal.jpg con ruta absoluta
 import { useState, useEffect } from "react"
 
 export default function Hero() {
