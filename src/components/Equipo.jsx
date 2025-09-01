@@ -24,7 +24,7 @@ export default function Equipo() {
             >
               {/* Foto del perfil */}
               <Avatar
-                src={miembro.foto}
+                src={miembro.foto.replace('/img/equipo/', 'img/').replace('/img/', 'img/')}
                 alt={miembro.nombre}
                 sx={{ width: 100, height: 100, mx: 'auto', mb: 2 }}
               />
