@@ -17,12 +17,66 @@ function App() {
   return (
     <Box>
       {/* ==================== Menú fijo ==================== */}
-      <AppBar position="fixed" color="primary">
-        <Toolbar sx={{ justifyContent: "center" }}>
-          <Button color="inherit" onClick={() => scrollTo("mision")}>Misión y Visión</Button>
-          <Button color="inherit" onClick={() => scrollTo("origen")}>Origen del Estudio</Button>
-          <Button color="inherit" onClick={() => scrollTo("desarrollo")}>Desarrollo de Videojuegos</Button>
-          <Button color="inherit" onClick={() => scrollTo("equipo")}>Equipo</Button>
+      <AppBar
+        position="fixed"
+        sx={{
+          bgcolor: "black",      // 🔥 Fondo negro sólido
+          boxShadow: "none",     // 🔥 Sin sombra para minimalismo
+          borderRadius: 0,       // 🔥 Sin esquinas redondeadas
+          height: "55px",        // 🔥 Más delgado
+        }}
+      >
+        <Toolbar sx={{ justifyContent: "center", minHeight: "55px !important" }}>
+          <Button
+            sx={{
+              color: "white",          // 🔥 Texto blanco para contraste
+              fontSize: "1rem",        // 🔥 Un poco más grande que el default
+              textTransform: "none",   // 🔥 Respeta mayúsculas/minúsculas
+              mx: 1.5,                 // 🔥 Separación horizontal
+              "&:hover": {
+                color: "#1976d2",      // 🔥 Hover azul (puedes cambiarlo)
+              },
+            }}
+            onClick={() => scrollTo("mision")}
+          >
+            Misión y Visión
+          </Button>
+          <Button
+            sx={{
+              color: "white",
+              fontSize: "1rem",
+              textTransform: "none",
+              mx: 1.5,
+              "&:hover": { color: "#1976d2" },
+            }}
+            onClick={() => scrollTo("origen")}
+          >
+            Origen del Estudio
+          </Button>
+          <Button
+            sx={{
+              color: "white",
+              fontSize: "1rem",
+              textTransform: "none",
+              mx: 1.5,
+              "&:hover": { color: "#1976d2" },
+            }}
+            onClick={() => scrollTo("desarrollo")}
+          >
+            Desarrollo de Videojuegos
+          </Button>
+          <Button
+            sx={{
+              color: "white",
+              fontSize: "1rem",
+              textTransform: "none",
+              mx: 1.5,
+              "&:hover": { color: "#1976d2" },
+            }}
+            onClick={() => scrollTo("equipo")}
+          >
+            Equipo
+          </Button>
         </Toolbar>
       </AppBar>
 
