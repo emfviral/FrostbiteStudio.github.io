@@ -46,7 +46,7 @@ export default function Equipo() {
                 sx={{ mt: 2 }}
               >
                 <img 
-                  src="/img/equipo/steam_icon.png" 
+                  src="img/steam_icon.png" 
                   alt="Steam" 
                   style={{ width: 32, height: 32 }}
                 />
