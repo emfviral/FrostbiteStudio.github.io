@@ -48,7 +48,7 @@ export default function Hero() {
         textAlign: "center",
         px: 2,
         mt: 0,
-  backgroundImage: "url('/img/banner_principal.jpg')",
+  backgroundImage: "url('/img/banners/banner_principal.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
