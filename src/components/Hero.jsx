@@ -1,6 +1,6 @@
 // src/components/Hero.jsx
 import { Typography, Box } from "@mui/material"
-import bannerPrincipal from '../../public/img/banners/banner_principal.jpg';
+import bannerPrincipal from '../assets/img/banner_principal.jpg';
 import { useState, useEffect } from "react"
 
 export default function Hero() {
